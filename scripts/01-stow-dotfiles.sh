@@ -10,7 +10,6 @@ fi
 
 cd "$DOTFILES_DIR"
 sudo pacman -S --noconfirm stow
-cd ~/dotfiles/.config
 
 # Remove old Hyprland config if it exists
 if [ -f "$HOME/.config/hypr/hyprland.conf" ] && [ ! -L "$HOME/.config/hypr/hyprland.conf" ]; then

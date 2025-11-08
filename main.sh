@@ -15,6 +15,12 @@ trap 'fail "Error on line $LINENO. Check $LOG_FILE for details."' ERR
 
 log "=== Starting main setup script ==="
 
+# Ask for password ONE TIME
+sudo -v
+
+# Keep sudo alive until the script finishes
+while true; do sudo -n true; sleep 60; done 2>/dev/null &
+
 for script in "$SCRIPTS_DIR"/*.sh; do
   log "Running $(basename "$script")..."
   bash "$script" 2>&1 | tee -a "$LOG_FILE"

@@ -1,5 +1,5 @@
 # Dotfiles - WIP
-My own dotfiles and install scripts for Arch Linux
+My own dotfiles and install scripts for Arch Linux (WIP)
 
 --- INSTALLATION ---
 - sudo pacman -Syu --noconfirm git

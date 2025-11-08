@@ -10,5 +10,5 @@ fi
 
 cd "$DOTFILES_DIR"
 sudo pacman -S --noconfirm stow
-cd ~/dotfiles
+cd ~/dotfiles/.config
 stow hypr

@@ -2,7 +2,7 @@
 set -e
 
 DOTFILES_DIR="$HOME/dotfiles"
-REPO_URL="https://github.com/PartitionPixel/ArchLinux.git"
+REPO_URL="https://github.com/PartitionPixel/dotfiles.git"
 
 if [ ! -d "$DOTFILES_DIR" ]; then
   git clone "$REPO_URL" "$DOTFILES_DIR"

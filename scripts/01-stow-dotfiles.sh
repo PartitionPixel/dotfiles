@@ -19,3 +19,12 @@ fi
 
 stow -R hypr
 echo "✅ Hyprland config deployed from dotfiles"
+
+# Reload Hyprland config if Hyprland is running
+if pgrep -x "Hyprland" > /dev/null; then
+    echo "Reloading Hyprland configuration..."
+    hyprctl reload && echo "✅ Hyprland reloaded"
+else
+    echo "ℹ️ Hyprland is not running; skipping reload"
+fi
+

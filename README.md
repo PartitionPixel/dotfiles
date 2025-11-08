@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles - WIP
 My own dotfiles and install scripts for Arch Linux
 
 --- INSTALLATION ---
@@ -7,6 +7,6 @@ My own dotfiles and install scripts for Arch Linux
 - chmod +x main.sh
 - ./main.sh
 
---- TODO ---
+--- TODO (WIP) ---
 - Add way more packages
 - Add way more config stuff

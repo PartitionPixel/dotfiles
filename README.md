@@ -1,5 +1,5 @@
-# ArchLinux
-My own dotfiles and install scripts for arch linux
+# Dotfiles
+My own dotfiles and install scripts for Arch Linux
 
 --- TODO ---
 - Remove warning automaticly

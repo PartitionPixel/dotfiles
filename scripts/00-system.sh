@@ -2,6 +2,7 @@
 set -e
 
 mkdir -p ~/Pictures/Screenshots
+mkdir -p ~/Videos/Recording
 
 sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm git base-devel

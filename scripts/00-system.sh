@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+mkdir -p ~/Pictures/Screenshots
+
 sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm git base-devel
 sudo pacman -S --noconfirm linux-zen linux-zen-headers

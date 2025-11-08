@@ -3,7 +3,7 @@ set -e
 
 AUR_PACKAGES=(
   "brave-bin"
-  "sunsetr"
+  "sunsetr-bin"
 )
 
 for pkg in "${AUR_PACKAGES[@]}"; do

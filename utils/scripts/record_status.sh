@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Absolute path to the state file
-STATE_FILE="/home/warpstar/.recording_start_time"
+STATE_FILE="~/dotfiles/utils/scripts/.recording_start_time"
 
 if pgrep -x wf-recorder > /dev/null && [ -f "$STATE_FILE" ]; then
     start_time=$(cat "$STATE_FILE")

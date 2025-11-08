@@ -7,4 +7,5 @@ sudo pacman -S --noconfirm linux-zen linux-zen-headers
 sudo pacman -S --noconfirm nvidia-open-dkms nvidia-open-utils lib32-nvidia-open-utils nvidia-settings
 sudo pacman -S --noconfirm swaync
 sudo pacman -S --noconfirm hypridle hyprpaper
+sudo pacman -S --noconfirm polkit
 

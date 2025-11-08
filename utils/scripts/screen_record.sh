@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-STATE_FILE="/home/warpstar/.recording_start_time"
-mkdir -p "/home/warpstar/Videos/Recordings"
+STATE_FILE="~/.recording_start_time"
+mkdir -p "~/Videos/Recordings"
 
 # Check if recording is already running
 if pgrep -x wf-recorder > /dev/null; then
@@ -26,7 +26,7 @@ kill -SIGRTMIN+1 $(pidof waybar)
 
 # Start recording in foreground (still blocks for wf-recorder)
 dateTime=$(date +%m-%d-%Y-%H-%M-%S)
-output="/home/warpstar/Videos/Recordings/$dateTime.mp4"
+output="~/Videos/Recordings/$dateTime.mp4"
 wf-recorder --bframes max_b_frames -f "$output" -g "$GEOMETRY"
 
 # Cleanup after recording ends
